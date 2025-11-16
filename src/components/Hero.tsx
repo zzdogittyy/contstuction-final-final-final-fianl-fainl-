@@ -11,24 +11,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-white">
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-white/90 via-gray-50/80 to-white z-10"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-      />
-
-      <div className="absolute inset-0 opacity-15">
-        <img
-          src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Construction Site"
-          className="w-full h-full object-cover"
-          style={{ transform: `scale(${1 + scrollY * 0.0003})` }}
-        />
-      </div>
-
-      <div className="absolute inset-0 blueprint-overlay opacity-5 z-20" />
-
-      <div className="absolute inset-0 grid-overlay opacity-3 z-20" />
+    <section className="relative h-screen overflow-hidden concrete-texture">
+      <div className="absolute inset-0 z-10" />
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent z-30" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent z-30" />
