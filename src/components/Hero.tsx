@@ -88,11 +88,11 @@ const Hero = () => {
       </div>
 
       <div className="absolute top-8 left-8 z-40 flex flex-col items-center gap-3">
-        <div className="w-16 h-16 rounded-full bg-white/50 border border-gray-300 flex items-center justify-center overflow-hidden backdrop-blur-sm">
+        <div className="w-16 h-16 flex items-center justify-center">
           <img
             src="/Screenshot 2025-11-15 132907.png"
             alt="Jothom Logo"
-            className="w-16 h-16 object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
         <div className="text-4xl font-semibold tracking-tight">
