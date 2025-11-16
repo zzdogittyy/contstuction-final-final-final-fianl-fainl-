@@ -109,13 +109,14 @@
   }
 
   .concrete-texture {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     background-image:
-      repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(120, 120, 120, 0.03) 2px, rgba(120, 120, 120, 0.03) 4px),
-      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(100, 100, 100, 0.02) 2px, rgba(100, 100, 100, 0.02) 4px),
-      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(110, 110, 110, 0.02) 10px, rgba(110, 110, 110, 0.02) 20px),
-      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(130, 130, 130, 0.02) 10px, rgba(130, 130, 130, 0.02) 20px);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+      repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(120, 120, 120, 0.015) 50px, rgba(120, 120, 120, 0.015) 100px),
+      repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(110, 110, 110, 0.01) 50px, rgba(110, 110, 110, 0.01) 100px),
+      repeating-linear-gradient(45deg, transparent, transparent 80px, rgba(130, 130, 130, 0.008) 80px, rgba(130, 130, 130, 0.008) 160px),
+      repeating-linear-gradient(-45deg, transparent, transparent 80px, rgba(140, 140, 140, 0.008) 80px, rgba(140, 140, 140, 0.008) 160px),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" /></filter><rect width="200" height="200" fill="%23f9f9f9" filter="url(%23noise)" opacity="0.03"/></svg>');
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 200px 200px;
   }
 }
 
